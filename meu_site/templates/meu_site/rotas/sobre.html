@@ -1,0 +1,107 @@
+{% load static %}<!-- Carrega arquivos estáticos, como CSS e JavaScript, usando a tag static --> 
+<!DOCTYPE html><!-- Define o tipo de documento como HTML --> 
+<html lang="pt-br"><!-- Define o idioma do documento como Português do Brasil -->
+
+<head>
+    
+    <meta charset="UTF-8"><!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Define a viewport para dispositivos móveis --> 
+    <link rel="stylesheet" href= "{% static "meu_site/style.css" %}"/><!-- Importa um arquivo CSS estático usando a tag static --> 
+    <title>Bob Esponja</title><!-- Define o título do documento --> 
+    
+</head>
+<body>
+
+    {% include "meu_site/rotas/menu.html" %}
+    <br>
+    <div class="sobre">
+        <img src="https://static.wikia.nocookie.net/iepfanon/images/7/72/Logobob1.png/revision/latest/scale-to-width-down/755?cb=20220629194506" alt="Logo" class="i3"/>
+        <h1><b>Uma Visão Detalhada</b></h1>
+        <p>
+            Desde sua estreia em <b>1999</b>, Bob Esponja se estabeleceu como uma das séries de animação mais icônicas e duradouras da história da televisão.
+            Criado por <b>Stephen Hillenburg</b>, um ex-professor de biologia marinha, a série mergulha os espectadores em um mundo submarino cheio de humor,
+            aventura e personagens peculiares. Vamos explorar detalhadamente os diferentes aspectos que tornam Bob Esponja uma obra-prima da animação
+        </p>
+        <!-- Antecedentes e Desenvolvimento: -->
+        <div class="tex">
+            <img src="https://services.meteored.com/img/article/por-que-la-vida-marina-experimento-un-auge-extraordinario-en-el-pasado-oxigeno-estudio-1697324591681_768.jpg" alt="Vida Marinha" class="s1"/>
+            
+            <h3><b>Antecedentes e Desenvolvimento:</b></h3>
+            
+            <p>
+                A semente da ideia de Bob Esponja foi plantada na mente criativa de <b>Hillenburg</b> enquanto ele ministrava aulas sobre vida marinha. Sua paixão
+                pela animação o levou a desenvolver essa ideia ao longo dos anos, até que ela florescesse em uma série de TV
+            </p>
+        </div>
+        <!-- Concepção: -->
+        <div class="tex">
+            <img src="https://s2-g1.glbimg.com/Udx1e0zgo-oxiS9REecy0zHda2M=/0x0:2000x1333/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/k/r/fjnusaSRq9kkcb4nvaQg/bob4.jpg" alt="Siri Cascudo" class="s1"/>
+            
+            <h3><b>Concepção:</b></h3>
+            
+            <p>
+                <b>Hillenburg</b> imaginou um universo subaquático povoado por criaturas marítimas antropomórficas, cada uma com sua própria personalidade e
+                peculiaridades. A visão de <b>Hillenburg</b> era criar uma série que fosse divertida e acessível para todas as idades, incorporando tanto humor
+                infantil quanto referências culturais que adultos apreciariam.
+            </p>
+        </div>
+        <!-- Montagem: -->
+        <div class="tex">
+            <img src="https://static.wikia.nocookie.net/06ef84c4-d75d-4ec8-92e6-7bac21d9acb1" alt="Bob Nick" class="s1"/>
+            
+            <h3><b>Montagem:</b></h3>
+            
+            <p>
+                A produção de Bob Esponja começou na <b>Nickelodeon Animation Studio</b>, onde <b>Hillenburg</b> reuniu uma equipe talentosa de escritores e
+                animadores para ajudar a trazer sua visão à vida.
+            </p>
+        </div>
+        <!-- Escrita: -->
+        <div class="tex">
+            <img src="https://rollingstone.uol.com.br/media/_versions/bob_esponja_inapropriado_reprod_nickelodeon_widelg.jpg" alt="Bob" class="s1"/>
+            
+            <h3><b>Escrita:</b></h3>
+            
+            <p>
+                Os roteiros de Bob Esponja são conhecidos por seu humor absurdo e diálogos memoráveis. Embora seja uma comédia, a série muitas vezes
+                aborda temas mais profundos, como <b>amizade, tolerância e resolução de conflitos</b>.
+            </p>
+        </div>
+        <!-- Animação: -->
+        <div class="tex">
+            <img src="https://almeidajunior-prod1.s3.amazonaws.com/prod/uploads/news/5d7a7cbf6ad5d.jpg" alt="Bob" class="s1"/>
+            
+            <h3><b>Animação:</b></h3>
+            
+            <p>
+                A animação vibrante e colorida de Bob Esponja é uma parte fundamental do seu apelo. Ela complementa perfeitamente o estilo de humor da
+                série, criando um mundo submarino que é ao mesmo tempo surreal e envolvente.
+            </p>
+        </div>
+        <!-- Quantidade de Episódios: -->
+        <div class="tex">
+            <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2016/04/05/675x450/1_cbnfot050420160102-21057794.jpg?20220217210708?20220217210708" alt="Bob" class="s1"/>
+            
+            <h3><b>Quantidade de Episódios:</b></h3>
+            
+            <p>
+                Ao longo de suas várias temporadas, Bob Esponja acumulou mais de <b>250 episódios</b>, proporcionando aos fãs inúmeras horas de entretenimento.
+            </p>
+        </div>
+        
+        <!-- Criador: -->
+        <img src="https://s2-g1.glbimg.com/shZ9L-gB6HsfbFbMk92vXW-Ay0A=/0x0:2027x2396/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/B/P/90BLJlTUSSSPvH4bbnMA/spongebob1-1-.jpg" alt="Criador" class="s2"/>
+       
+        <h3><b>Criador:</b></h3>
+        
+        <p>
+            <b>Stephen Hillenburg</b> não apenas concebeu Bob Esponja, mas também dedicou sua paixão e talento para transformá-lo em uma das séries de
+            animação mais amadas de todos os tempos. Sua visão e criatividade continuam a inspirar fãs e criadores de conteúdo em todo o mundo,
+            mesmo após sua trágica morte em <b>2018</b>. <b>Hillenburg</b> deixou para trás um legado que perdurará por gerações, continuando a trazer alegria
+            e diversão para espectadores de todas as idades através das aventuras subaquáticas de Bob Esponja e seus amigos.
+        </p>
+
+    </div>
+
+</body>
+</html>

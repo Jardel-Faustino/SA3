@@ -1,0 +1,235 @@
+/* Arquivo Principal */
+
+* {
+    width: 100%; /* Define a largura de todos os elementos como 100% */
+    padding: 0; /* Remove o preenchimento padrão dos elementos */
+    box-sizing: border-box; /* Define a caixa de modelagem como incluindo a largura e o padding */
+}
+html,body {
+    width: 100%; /* Define a largura do HTML e do corpo como 100% */
+    height: 100%; /* Define a altura do HTML e do corpo como 100% */
+    background-image: url("https://cdn.pixabay.com/photo/2022/11/15/09/15/bubbles-7593553_1280.jpg"); /* Define uma imagem de fundo para o HTML e o corpo */
+    background-size: 100%; /* Define o tamanho da imagem de fundo como 100% */
+    background-position: center; /* Define a posição da imagem de fundo como centralizada */
+    margin:0; /* Remove as margens padrão do HTML e do corpo */
+    font-family: "Courier New"; /* Define a família de fontes para o HTML e o corpo */
+}
+
+/* Arquivo Menu */
+.menu {
+    width: 100%; /* Define a largura da div .menu como 100% */
+    height: 300px; /* Define a altura da div .menu como 300 pixels */
+    /* Define uma imagem de fundo para a div .menu */
+    background-image: url("https://mansurdg.files.wordpress.com/2015/07/destacada_bob1.jpg?w=1180&h=435&crop=1");
+    background-size: cover; /* Define o tamanho da imagem de fundo como cobrir */
+    background-repeat: no-repeat;  /* Define que a imagem de fundo não deve se repetir */
+    background-position: top; /* Define a posição da imagem de fundo como no topo */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda à div .menu */
+    margin: 0; /* Remove as margens padrão da div .menu */
+    position: relative; /* Define a posição da div .menu como relativa */
+    padding-bottom: 20px; /* Adiciona um espaço para os botões */
+}
+.botoes {
+    position: absolute; /* Define a posição dos botões como absoluta */
+    bottom: 0; /* Coloca os botões na parte inferior da div .menu */
+    left: 50%; /* Alinha os botões horizontalmente */
+    transform: translateX(-50%); /* Centraliza os botões */
+}
+.botao {
+    /* Define uma imagem de fundo para os botões */
+    background-image: url("https://i.pinimg.com/originals/de/0b/35/de0b35a6feca24ac968e1e0598482dc6.jpg"); 
+    color: rgb(38, 38, 255); /* Define a cor do texto dos botões */
+    -webkit-text-stroke: 1px rgb(38, 38, 255); /* Adiciona um contorno ao texto dos botões */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda aos botões */
+    border-radius: 10px; /* Adiciona um raio de borda aos botões */
+    padding: 10px 20px; /* Adiciona preenchimento aos botões */
+    margin-right: 10px; /* Adiciona uma margem à direita dos botões */
+    text-decoration: none; /* Remove a decoração de texto dos botões */
+}
+.botao:last-child {
+    margin-right: 0; /* Remove a margem à direita do último botão */
+}
+.botao.ativo {
+    /* Define uma imagem de fundo para os botões */
+    background-image: url("https://i.pinimg.com/originals/de/0b/35/de0b35a6feca24ac968e1e0598482dc6.jpg"); 
+    color: rgb(20, 20, 114); /* Define a cor do texto dos botões */
+    -webkit-text-stroke: 1px rgb(20, 20, 114); /* Adiciona um contorno ao texto dos botões */
+    border: 2px solid rgb(20, 20, 114); /* Adiciona uma borda aos botões */
+    border-radius: 10px; /* Adiciona um raio de borda aos botões */
+    padding: 10px 20px; /* Adiciona preenchimento aos botões */
+    margin-right: 10px; /* Adiciona uma margem à direita dos botões */
+    text-decoration: none; /* Remove a decoração de texto dos botões */
+}
+/* Arquivo Inicial */
+.inicio {
+    width: 80%; /* Define a largura da div .inicio como 80% */
+    height: 2400px; /* Define a altura da div .inicio como 2400 pixels */
+    background-color: aliceblue; /* Define a cor de fundo da div .inicio como aliceblue */
+    background-size: cover; /* Define o tamanho da imagem de fundo como cobrir */
+    background-position: center; /* Define a posição da imagem de fundo como centralizada */
+    background-repeat: no-repeat; /* Define que a imagem de fundo não deve se repetir */
+    margin: 0 auto 40px auto; /* Define as margens da div .inicio */
+    text-align: center; /* Alinha o texto centralmente na div .inicio */
+    padding: 40px; /* Adiciona preenchimento à div .inicio */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda à div .inicio */
+    position: relative; /* Define a posição da div .inicio como relativa */
+    display: flex; /* Ativa o modelo de layout flexível */
+    flex-wrap: wrap; /* Permite que os itens flexíveis sejam quebrados em várias linhas */
+    justify-content: center; /* Alinha os itens flexíveis ao centro */
+}
+.i1 {
+    width: 300px; /* Define a largura do elemento .i3 como 300 pixels */
+    height: 300px; /* Define a altura do elemento .i3 como 300 pixels */
+    border-radius: 100%; /* Define um raio de borda de 100% (círculo) para o elemento .i1 */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .i1 */
+}
+.inicio > h1 {
+    text-decoration: underline; /* Adiciona uma decoração de sublinhado ao título h1 dentro de .inicio */
+    color: black; /* Define a cor do texto do título h1 dentro de .inicio como preto */
+}
+
+.inicio > p {
+    width: 80%; /* Define a largura dos parágrafos dentro de .inicio como 80% */
+    text-align: center; /* Alinha o texto centralmente nos parágrafos dentro de .inicio */
+    font-size: 18px; /* Define o tamanho da fonte dos parágrafos dentro de .inicio */
+    line-height: 1.0; /* Define a altura da linha dos parágrafos dentro de .inicio */
+    color: black; /* Define a cor do texto dos parágrafos dentro de .inicio como preto */
+    margin: 0 10%; /* Define as margens dos parágrafos dentro de .inicio */
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos dentro de .inicio */
+}
+
+.inicio > h3 {
+    text-decoration: underline; /* Adiciona uma decoração de sublinhado ao título h3 dentro de .inicio */
+    color: black; /* Define a cor do texto do título h3 dentro de .inicio como preto */
+}
+.if1 {
+    flex: 0 0 calc(33% - 20px); /* Define a largura do item .if1 como 33% menos 20 pixels */
+    margin: 10px; /* Define as margens do item .if1 */
+    display: inline-block; /* Define o item .if1 como um bloco de nível de linha */
+}
+.if2 {
+    width: 200px; /* Define a largura do elemento .s1 como 200 pixels */
+    height: 200px; /* Define a altura do elemento .s1 como 200 pixels */
+    border-radius: 100%; /* Define um raio de borda de 100% (círculo) para o elemento .if2 */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .if2 */
+}
+
+/* Arquivo Personagens */
+.personagens {
+    width: 80%; /* Define a largura da div .personagens como 80% */
+    height: 2400px; /* Define a altura da div .personagens como 2400 pixels */
+    background-color: aliceblue; /* Define a cor de fundo da div .personagens como aliceblue */
+    background-size: cover; /* Define o tamanho da imagem de fundo como cobrir */
+    background-position: center; /* Define a posição da imagem de fundo como centralizada */
+    background-repeat: no-repeat; /* Define que a imagem de fundo não deve se repetir */
+    margin: 0 auto 40px auto; /* Define as margens da div .personagens */
+    text-align: center; /* Alinha o texto centralmente na div .personagens */
+    padding: 40px; /* Adiciona preenchimento à div .personagens */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda à div .personagens */
+    display: flex; /* Ativa o modelo de layout flexível */
+    flex-wrap: wrap; /* Permite que os itens flexíveis sejam quebrados em várias linhas */
+    justify-content: center; /* Alinha os itens flexíveis ao centro */
+}
+.personagens > h1 {
+    text-decoration: underline; /* Adiciona uma decoração de sublinhado ao título h1 dentro de .personagens */
+    color: black; /* Define a cor do texto do título h1 dentro de .personagens como preto */
+}
+.i2 {
+    width: 300px; /* Define a largura do elemento .i3 como 300 pixels */
+    height: 300px; /* Define a altura do elemento .i3 como 300 pixels */
+    border-radius: 100%; /* Define um raio de borda de 100% (círculo) para o elemento .i2 */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .i2 */
+}
+.psg {
+    flex: 0 0 calc(50% - 20px); /* Define a largura do item .psg como 50% menos 20 pixels */
+    margin: 10px; /* Define as margens do item .psg */
+    display: inline-block; /* Define o item .psg como um bloco de nível de linha */
+}
+.ps {
+    width: 160px; /* Define a largura do elemento .s1 como 200 pixels */
+    height: 160px; /* Define a altura do elemento .s1 como 200 pixels */
+    border-radius: 100%; /* Define um raio de borda de 100% (círculo) para o elemento .ps */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .ps */
+}
+.psg > h3 {
+    text-decoration: underline; /* Adiciona uma decoração de sublinhado ao título h3 dentro de .psg */
+    color: black; /* Define a cor do texto do título h3 dentro de .psg como preto */
+}
+.psg > p {
+    width: 80%; /* Define a largura dos parágrafos dentro de .psg como 80% */
+    text-align: center; /* Alinha o texto centralmente nos parágrafos dentro de .psg */
+    font-size: 14px; /* Define o tamanho da fonte dos parágrafos dentro de .psg */
+    line-height: 1.2; /* Define a altura da linha dos parágrafos dentro de .psg */
+    color: black; /* Define a cor do texto dos parágrafos dentro de .psg como preto */
+    margin: 0 10%; /* Define as margens dos parágrafos dentro de .psg */
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos dentro de .psg */
+}
+
+/* Arquivo Sobre */
+.sobre {
+    width: 80%; /* Define a largura da div .sobre como 80% */
+    height: 2400px; /* Define a altura da div .sobre como 2400 pixels */
+    background-color: aliceblue; /* Define a cor de fundo da div .sobre como aliceblue */
+    background-size: cover; /* Define o tamanho da imagem de fundo como cobrir */
+    background-position: center; /* Define a posição da imagem de fundo como centralizada */
+    background-repeat: no-repeat; /* Define que a imagem de fundo não deve se repetir */
+    margin: 0 auto 40px auto; /* Define as margens da div .sobre */
+    text-align: center; /* Alinha o texto centralmente na div .sobre */
+    padding: 40px; /* Adiciona preenchimento à div .sobre */
+    overflow-x: auto; /* Adiciona uma barra de rolagem horizontal quando necessário */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda à div .sobre */
+    display: flex; /* Ativa o modelo de layout flexível */
+    flex-wrap: wrap; /* Permite que os itens flexíveis sejam quebrados em várias linhas */
+    justify-content: center; /* Alinha os itens flexíveis ao centro */
+}
+.i3 {
+    width: 300px; /* Define a largura do elemento .i3 como 300 pixels */
+    height: 300px; /* Define a altura do elemento .i3 como 300 pixels */
+    border-radius: 50%; /* Define um raio de borda de 50% (círculo) para o elemento .i3 */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .i3 */
+}
+.sobre > h1 {
+    text-decoration: underline; /* Adiciona uma decoração de sublinhado ao título h1 dentro de .sobre */
+    color: black; /* Define a cor do texto do título h1 dentro de .sobre como preto */
+}
+.sobre > p {
+    width: 80%; /* Define a largura dos parágrafos dentro de .sobre como 80% */
+    text-align: center; /* Alinha o texto centralmente nos parágrafos dentro de .sobre */
+    font-size: 18px; /* Define o tamanho da fonte dos parágrafos dentro de .sobre */
+    line-height: 1.2; /* Define a altura da linha dos parágrafos dentro de .sobre */
+    color: black; /* Define a cor do texto dos parágrafos dentro de .sobre como preto */
+    margin: 0 10%; /* Define as margens dos parágrafos dentro de .sobre */
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos dentro de .sobre */
+}
+.tex {
+    flex: 0 0 calc(50% - 20px); /* Define a largura do item .txt como 50% menos 20 pixels */
+    margin: 10px; /* Define as margens do item .txt */
+    display: inline-block; /* Define o item .txt como um bloco de nível de linha */
+}
+.s1 {
+    width: 200px; /* Define a largura do elemento .s1 como 200 pixels */
+    height: 200px; /* Define a altura do elemento .s1 como 200 pixels */
+    border-radius: 50%; /* Define um raio de borda de 50% (círculo) para o elemento .s1 */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .s1 */
+}
+.s2 {
+    width: 200px; /* Define a largura do elemento .s1 como 200 pixels */
+    height: 200px; /* Define a altura do elemento .s1 como 200 pixels */
+    border-radius: 50%; /* Define um raio de borda de 50% (círculo) para o elemento .s1 */
+    border: 2px solid rgb(37, 109, 243); /* Adiciona uma borda ao elemento .s1 */
+}
+.tex > h3 {
+    text-decoration: underline; /* Adiciona uma decoração de sublinhado ao título h3 dentro de .txt */
+    color: black; /* Define a cor do texto do título h3 dentro de .txt como preto */
+}
+.tex > p {
+    width: 80%; /* Define a largura dos parágrafos dentro de .txt como 80% */
+    text-align: center; /* Alinha o texto centralmente nos parágrafos dentro de .txt */
+    font-size: 14px; /* Define o tamanho da fonte dos parágrafos dentro de .txt */
+    line-height: 1.4; /* Define a altura da linha dos parágrafos dentro de .txt */
+    color: black; /* Define a cor do texto dos parágrafos dentro de .txt como preto */
+    margin: 0 10%; /* Define as margens dos parágrafos dentro de .txt */
+    margin-bottom: 20px; /* Define a margem inferior dos parágrafos dentro de .txt */
+}

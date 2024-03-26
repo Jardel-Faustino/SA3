@@ -1,0 +1,157 @@
+{% load static %}<!-- Carrega arquivos estáticos, como CSS e JavaScript, usando a tag static --> 
+<!DOCTYPE html><!-- Define o tipo de documento como HTML --> 
+<html lang="pt-br"><!-- Define o idioma do documento como Português do Brasil -->
+
+<head>
+    
+    <meta charset="UTF-8"><!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Define a viewport para dispositivos móveis --> 
+    <link rel="stylesheet" href= "{% static "meu_site/style.css" %}"/><!-- Importa um arquivo CSS estático usando a tag static --> 
+    <title>Bob Esponja</title><!-- Define o título do documento --> 
+    
+</head>
+<body>
+
+    {% include "meu_site/rotas/menu.html" %}
+    <br>
+    <div class="personagens">
+        <img src="https://img.odcdn.com.br/wp-content/uploads/2019/11/20191114030029.jpg" alt="Bob Eeponja, Patrick e Lula Molusco" class="i2"/>
+
+        <h1><b>Personagens</b></h1>
+
+        <!-- 1° Bob Esponja -->
+        <div Class="psg">
+            <img src="https://images.milenio.com/l5mNdmhIwDi9d5Wt5lxe_xX96Lc=/345x194/uploads/media/2014/07/17/bob-esponja-cumple-anos-el.jpeg" Alt="Bob Esponja" class="ps"/>
+   
+            <h3><b>1° Bob Esponja</b></h3>
+            
+            <p>
+                Bob Esponja é uma esponja-do-mar otimista e energética que vive na Fenda do Biquíni. Ele trabalha como cozinheiro no Siri Cascudo e é
+                conhecido por sua natureza ingênua e entusiasmo contagiante. Apesar de sua falta de habilidades sociais em certas situações, Bob Esponja
+                é amado por sua lealdade aos amigos e sua disposição para sempre ver o lado positivo das coisas.
+            </p>
+
+        </div>
+
+        <!-- 2° Patrick Estrela -->
+        <div Class="psg">
+            <img src="https://uploads.metropoles.com/wp-content/uploads/2020/08/10173820/Patrick-Estrela-600x400.jpg" Alt="Patrick Estrela" class="ps"/>
+
+            <h3><b>2° Patrick Estrela</b></h3>
+
+            <p>
+                Patrick é o melhor amigo de Bob Esponja e é uma estrela-do-mar cor-de-rosa. Ele é notavelmente ingênuo e muitas vezes age sem pensar nas
+                consequências. Apesar disso, sua lealdade a Bob Esponja é inabalável, e ele está sempre disposto a ajudar, mesmo que acabe criando mais confusão.
+            </p>
+
+        </div>
+
+        <!-- 3° Lula Molusco -->
+        <div Class="psg">
+            <img src="https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.2176445:1590247642/image/image.jpg?f=16x9&$p$f=3965716" Alt="Lula Molusco" class="ps"/>
+
+            <h3><b>3° Lula Molusco</b></h3>
+
+            <p>
+                Lula Molusco é o vizinho mal-humorado de Bob Esponja e Patrick, que trabalha como caixa no Siri Cascudo. Ele é um polvo azul que se considera
+                um artista incompreendido e frequentemente expressa sua frustração com a vida na Fenda do Biquíni.
+            </p>
+
+        </div>
+        
+        <!-- 4° Sandy bochechas -->
+        <div Class="psg">
+            <img src="https://www.awebic.com/wp-content/uploads/2020/05/nome-sandy-bochechas.png" Alt="Sandy bochechas" class="ps"/>
+
+            <h3><b>4° Sandy bochechas</b></h3>
+
+            <p>
+                Sandy é uma esquilo texana que vive em um domo de vidro cheio de ar na Fenda do Biquíni. Ela é uma cientista talentosa e uma lutadora habilidosa
+                de caratê. Sandy é uma das poucas criaturas marinhas na série que não precisa de água para sobreviver.
+            </p>
+
+        </div>
+
+        <!-- 5° Seu siriguejo -->
+        <div Class="psg">
+            <img src="data:image/jpeg;base64,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" Alt="Seu siriguejo" class="ps"/>
+
+            <h3><b>5° Seu siriguejo</b></h3>
+
+            <p>
+                Seu Siriguejo é o dono mesquinho e ganancioso do Siri Cascudo, onde Bob Esponja trabalha como cozinheiro. Ele é um caranguejo vermelho com uma
+                mentalidade empresarial agressiva, sempre em busca de lucro e economizando em qualquer oportunidade possível.
+            </p>
+
+        </div>
+
+        <!-- 6° Gary -->
+        <div Class="psg">
+            <img src="https://i.pinimg.com/originals/bc/de/de/bcdede7df0adc0cfebca6aa3ef9566bc.png" Alt="Gary" class="ps"/>
+
+            <h3><b>6° Gary</b></h3>
+
+            <p>
+                Gary é o caracol de estimação de Bob Esponja e é muito mais do que um simples animal de estimação. Ele é altamente inteligente e muitas vezes
+                age como uma figura paterna para Bob Esponja, mantendo-o na linha quando necessário.
+            </p>
+
+        </div>
+
+        <!-- 7° Plankton -->
+        <div Class="psg">
+            <img src="https://media.tenor.com/DsexdqfbBnMAAAAe/bh187-spongebob.png" Alt="Plankton" class="ps"/>
+            
+            <h3><b>7° Plankton</b></h3>
+
+            <p>
+                Plankton é o principal antagonista da série, um microscópico plâncton verde que é o dono do Balde de Lixo. Ele está constantemente tentando
+                roubar a fórmula do hambúrguer de siri do Siri Cascudo para alcançar sucesso comercial.
+            </p>
+
+        </div>
+
+        <!-- 8° Sra.Puff -->
+        <div Class="psg">
+            <img src="https://observatoriodocinema.uol.com.br/wp-content/plugins/seox-image-magick/imagick_convert.php?format=.jpg&quality=91&imagick=uploads-observatoriodocinema.seox.com.br/2020/01/see-you-next-tuesday-mrs-puff-1579624947.jpg" Alt="Sra.Puff" class="ps"/>
+            
+            <h3><b>8° Sra.Puff</b></h3>
+
+            <p>
+                A Sra. Puff é a instrutora de pilotagem da Escola de Pilotagem de Barcos da Fenda do Biquíni. Ela é um peixe-balão laranja e muitas vezes se
+                encontra em situações complicadas devido às travessuras de seu aluno mais problemático, Bob Esponja.
+            </p>
+
+        </div>
+
+        <!-- 9° Homem Sereia e Mexilhãozinho -->
+        <div Class="psg">
+            <img src="https://pm1.aminoapps.com/6371/09407d4bf0fdc4a7c5d21b7e734dfe1c8a376b96_hq.jpg" Alt="Homem Sereia e Mexilhãozinho" class="ps"/>
+
+            <h3><b>9° Homem Sereia e Mexilhãozinho</b></h3>
+
+            <p>
+                Homem Sereia e Mexilhãozinho são uma dupla de super-heróis que parodiam personagens de quadrinhos. Homem Sereia é um homem com cabeça de
+                peixe e Mexilhãozinho é seu ajudante, um mexilhão. Eles lutam contra o crime na Fenda do Biquíni, mas muitas vezes são mais um incômodo
+                do que uma ajuda.
+            </p>
+
+        </div>
+
+        <!-- 10° Holandês Voador -->
+        <div Class="psg">
+            <img src="https://i.pinimg.com/564x/de/c5/9b/dec59bd7fd121f775b157078ec7979d1.jpg" Alt="Holandês Voador" class="ps"/>
+
+            <h3><b>10° Holandês Voador</b></h3>
+
+            <p>
+                O Holandês Voador é uma figura mitológica que serve como capitão do navio fantasma homônimo. Ele é retratado como um pirata assustador
+                que assombra os sete mares. O Holandês Voador é um antagonista ocasional na série.
+            </p>
+
+        </div>
+    
+    </div>
+
+</body>
+</html>

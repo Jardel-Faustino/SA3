@@ -1,0 +1,90 @@
+{% load static %}<!-- Carrega arquivos estáticos, como CSS e JavaScript, usando a tag static --> 
+<!DOCTYPE html><!-- Define o tipo de documento como HTML --> 
+<html lang="pt-br"><!-- Define o idioma do documento como Português do Brasil -->
+
+<head>
+    
+    <meta charset="UTF-8"><!-- Define a codificação de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Define a viewport para dispositivos móveis --> 
+    <link rel="stylesheet" href= "{% static "meu_site/style.css" %}"/><!-- Importa um arquivo CSS estático usando a tag static --> 
+    <title>Bob Esponja</title><!-- Define o título do documento --> 
+    
+</head>
+<body>
+    
+    {% include "meu_site/rotas/menu.html" %}
+    <br>
+    <div class="inicio">
+        <img src="https://i.uai.com.br/b9Ae3Fpw94pkmDY1oau2PqDAI6g=/750x0/imgsapp2.uai.com.br/app/noticia_133890394703/2019/02/19/241877/20190219165656329098u.jpeg" alt="Bob Esponja" class="i1">
+        <h1><b>A História</b></h1>
+        <p>
+            <br>
+            <b>"Bob Esponja Calça Quadrada"</b> é uma série animada que segue as aventuras de Bob Esponja, uma esponja do mar alegre e otimista 
+            que vive na cidade submarina de Fenda do Biquíni. A história se desenrola em torno das interações de Bob Esponja com seus 
+            amigos e vizinhos, bem como suas aventuras no trabalho e além.
+            <br><br>
+            No centro da narrativa está o Siri Cascudo, um restaurante de fast-food onde Bob Esponja trabalha como cozinheiro. Seu chefe 
+            é o avarento e mesquinho Senhor Siriguejo, que muitas vezes explora Bob Esponja e seus colegas de trabalho, como Lula Molusco, 
+            um polvo mal-humorado que odeia alegria e diversão.
+            <br><br>
+            Bob Esponja tem um melhor amigo chamado Patrick Estrela, uma estrela-do-mar rosa e bastante ingênua. Juntos, eles embarcam em 
+            inúmeras aventuras absurdas e hilariantes. Além disso, Bob Esponja tem uma paixão platônica pelo seu caracol de estimação Gary, 
+            a quem ele trata como um filho.
+            <br><br>
+            A série também apresenta outros personagens cativantes, como Sandy Cheeks, uma esquilo do Texas que mora em um domo de vidro 
+            subaquático e é apaixonada por ciência e esportes extremos. Há também Plankton, o vilão da série e dono do Balde de Lixo, 
+            concorrente do Siri Cascudo, cujo principal objetivo é roubar a receita do hambúrguer de siri secreta do Senhor Siriguejo.
+            <br><br>
+            Ao longo dos episódios, os espectadores testemunham uma infinidade de situações engraçadas e absurdas, desde Bob Esponja 
+            tentando passar no exame de motorista até competindo em concursos de culinária ou salvando Fenda do Biquíni de desastres 
+            iminentes. A série é marcada por seu humor surreal, piadas inteligentes e momentos emocionantes de camaradagem e amizade.
+            <br><br>
+            Além das aventuras do dia a dia, <b>"Bob Esponja Calça Quadrada"</b> ocasionalmente explora temas mais sérios, como responsabilidade, 
+            amizade, aceitação e trabalho em equipe. Embora seja um desenho animado destinado principalmente a crianças, a série conquistou 
+            uma base de fãs de todas as idades devido à sua natureza hilária e personagens memoráveis.
+            <br><br>
+            Ao longo dos anos, <b>"Bob Esponja Calça Quadrada"</b> tornou-se um fenômeno cultural, gerando filmes, jogos de vídeo game, produtos de 
+            merchandising e até um musical da Broadway. Seu legado perdura como um marco da animação televisiva, continuando a cativar e 
+            entreter espectadores em todo o mundo com sua comédia inteligente e charme único.
+        </p >
+        <h3><b>Principais Locais do Desenho</b></h3>
+        <div class="if1">
+            <img src="https://pm1.aminoapps.com/6421/7166c96fcee54bdfe227f02afc71d5cb558b4376_00.jpg" alt="Fenda do Biquine" class="if2"/>
+            <p><b>Fenda do Biquine</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://e1.pxfuel.com/desktop-wallpaper/698/192/desktop-wallpaper-the-krusty-krab-spongebob-krusty-krab.jpg" alt="Siri Cascudo" class="if2"/>
+            <p><b>Siri Cascudo</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm7JOAAHSZnhQY8RKyO3a29zHeCd7aljqWjbXz2kqOXhRjWjb4MMm_77BZ8YBmCxL9iUU&usqp=CAU" alt="Balde de Lixo" class="if2"/>
+            <p><b>Balde de Lixo</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://static.wikia.nocookie.net/wikiesponja/images/c/c8/Boating_School_Gallery_%2806%29.jpg/revision/latest/scale-to-width-down/300?cb=20160710202522&path-prefix=pt-br" alt="Escola de Pilotagem de Barcos" class="if2"/>
+            <p><b>Escola de Pilotagem de Barcos</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://pm1.aminoapps.com/6710/cdf3ca7aaf2f64f69561325ee90195dc817e3cf6_hq.jpg" alt="Campo de Águas Vivas" class="if2"/>
+            <p><b>Campo de Águas Vivas</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://static.wikia.nocookie.net/infobob/images/8/89/Casa_abacaxi.jpg/revision/latest?cb=20111024002515&path-prefix=pt" alt="Casa de Bob Esponja" class="if2"/>
+            <p><b>Casa de Bob Esponja</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://zonacuriosa.com/wp-content/uploads/2020/11/curiosidades-incriveis-sobre-o-patrick-estrela-3.jpg" alt="Casa de Patrick" class="if2"/>
+            <p><b>Casa de Patrick</b></p>
+        </div>
+        <div class="if1">
+            <img src="https://pm1.aminoapps.com/6711/56625540022fd85975f8ebab419cfd89970c264d_hq.jpg" alt="Casa de Lula Molusco" class="if2"/>
+            <p><b>Casa de Lula Molusco</b></p>
+        </div><div class="if1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEOfaqmGkJzvOSAQ6uitI0-NSdyye7N8E4Tg&usqp=CAU" alt="Casa de sandy" class="if2"/>
+            <p><b>Casa de sandy</b></p>
+        </div>
+        
+    </div> 
+
+</body>
+</html>

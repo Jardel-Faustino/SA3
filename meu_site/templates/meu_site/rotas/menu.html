@@ -1,0 +1,18 @@
+<!-- Criar a DIV Menu -->
+<div class="menu">     
+    <!-- Criar a DIV Botoes -->
+    <div class="botoes">
+    
+        <!-- Cria um LINK para a página "inicio" e definir a CLASS BOTAO para poder editar os LINK no CSS -->
+        <!-- O "IF" serve para modificar a classe do botão para 'ativo' se a página atual for diferente de 'inicio' -->
+        <a href="{% url "inicio" %}" class="botao ativo{% if pagina_ativa != 'inicio' %}botao{% endif %}"><b>Inicio</b></a>
+        <!-- Cria um LINK para a página "personagens" e definir a CLASS BOTAO para poder editar os LINK no CSS -->
+        <!-- O "IF" serve para modificar a classe do botão para 'ativo' se a página atual for 'personagens' -->
+        <a href="{% url "personagens" %}" class="botao {% if pagina_ativa == 'personagens' %}ativo{% endif %}"><b>Personagens</b></a>
+        <!-- Cria um LINK para a página "sobre" e definir a CLASS BOTAO para poder editar os LINK no CSS -->
+        <!-- O "IF" serve para modificar a classe do botão para 'ativo' se a página atual for 'sobre' -->
+        <a href="{% url "sobre" %}" class="botao {% if pagina_ativa == 'sobre' %}ativo{% endif %}"><b>Sobre</b></a> 
+        
+    </div>
+</div>
+
